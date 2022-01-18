@@ -1,40 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import react from "react";
+import { Text,StyleSheet } from "react-native"
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.container}>
-        <Text style={styles.red}>just red</Text>
-        <Text style={styles.bigBlue}>just bigBlue</Text>
-        <Text style={[styles.bigBlue, styles.red]}>bigBlue, then red</Text>
-        <Text style={[styles.red, styles.bigBlue]}>red, then bigBlue</Text>
-      </View>
-    </View>
-  );
+const App =  ()=>{
+  return <Text style={styles.textStyle} > Myself Om Prakash</Text>
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-    // flex: 1,
-    // backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-//   },
-// });
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  bigBlue: {
-    color: 'blue',
-    fontWeight: 'bold',
-    fontSize: 30,
-  },
-  red: {
-    color: 'red',
+const styles =  StyleSheet.create({
+  textStyle: {
+    color: "red",
   },
 });
+
+
+export default App;
