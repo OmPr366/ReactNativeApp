@@ -1,7 +1,7 @@
 import React from "react";
-import { View,Text, StyleSheet, FlatList } from "react-native";
+import { View,Text, StyleSheet, FlatList , Button } from "react-native";
 
-const Flatlistdemo = () => {
+const Flatlistdemo = ({navigation}) => {
   const names = [
     {
       name: "Prakash",
@@ -30,7 +30,9 @@ const Flatlistdemo = () => {
         renderItem={({item}) => {
           return( <Text style={styles.textSyle} >{item.name}</Text>) 
         }}
-      />
+
+        
+      /><Button title='MyInput' onPress={()=>{ navigation.navigate('MyInput') }} ></Button>
     </View>
   );
 };
