@@ -1,0 +1,7 @@
+Import TouchablewihtoutFeedback
+
+Wrap in the view 
+
+and import keyboard
+
+in TouchablewihtoutFeedback  ->  OnPress => keyboard.dismiss();
